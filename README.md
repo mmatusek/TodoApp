@@ -1,2 +1,9 @@
-# TodoApp
-Todo app made with React
+## TODO App
+
+Todo app created with React.
+
+#### Install
+    npm install
+
+#### Run
+    npm start
