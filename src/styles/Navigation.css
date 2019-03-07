@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: white;
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+}
+
+li{
+  flex-grow: 1;
+}
+
+ a {
+  display: block;
+  padding: 15px 25px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: arial;
+  border-bottom: 4px solid rgb(172, 170, 170);
+
+}
+
+a:hover{
+  color: black;
+  transform: translateY(10px)
+  
+}
+
+section{
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+.home {
+  border-bottom-color: orange;
+}
+
+.waitingTasks {
+  border-bottom-color: mediumturquoise;
+  
+}
+
+.doneTasks{
+  border-bottom-color: rgb(182, 81, 152);
+}
+

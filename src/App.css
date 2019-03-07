@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+section.page {
+  flex-grow:1;
+}
+
+section {
+  flex-grow:1;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+main{
+  flex-grow: 1;
+  min-height: 500px;
+}
