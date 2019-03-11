@@ -1,30 +1,18 @@
 import React from 'react';
-import '../styles/DoneTask.css';
-import Task from './Task.js'
+
 
 const DoneTasks = (props) => {
 
-    const notactive = props.tasks.filter(task => !task.za)
+    const notactive = props.tasks.filter(task => !task.active)
+    const notactiveTask = notactive.map(task => ( 
+        <div className="list">
+        <h1>{task.title}</h1>
+        <button onClick={()=> props.delete(task.id)}>Delete</button>
+        </div>)
+    );
 
-    const notactiveTask = notactive.map(task => ( <
-        Task key = {
-            props.id
-        }
-        delete = {
-            props.delete
-        }
-        task = {
-            task
-        }
-        />
-    ))
     return (
-
-        <
-        div > {
-            notactiveTask
-        } <
-        /div>
+        <div > { notactiveTask} </div>
     )
 
 }

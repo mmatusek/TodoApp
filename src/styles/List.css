@@ -1,0 +1,17 @@
+ul.list {
+    width: 80%;
+    justify-content: space-between;
+}
+
+ul.list li{
+    width: 40%;
+    padding: 10px;
+    justify-content: space-around;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1em;
+}
+
+div.waitingTask{
+    align-items:center;
+}

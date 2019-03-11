@@ -1,0 +1,45 @@
+{
+    "zadania": "przyklady",
+    "tasks": [
+        {
+            "id": 0,
+            "title": "clean the car",
+            "date": "2019-04-15",
+            "priority": true,
+            "finishDate": null,
+            "active": true
+        },
+        {
+            "id": 1,
+            "title": "go to dance classess",
+            "date": "2019-02-15",
+            "priority": true,
+            "finishDate": null,
+            "active": true
+        },
+        {
+            "id": 2,
+            "title": "prepare dinner",
+            "date": "2019-03-15",
+            "priority": false,
+            "finishDate": null,
+            "active": true
+        },
+        {
+            "id": 3,
+            "title": "read a book",
+            "date": "2019-03-27",
+            "priority": false,
+            "finishDate": null,
+            "active": true
+        },
+        {
+            "id": 4,
+            "title": "meet with friends",
+            "date": "2019-03-20",
+            "priority": false,
+            "finishDate": null,
+            "active": false
+        }
+     ]
+}
