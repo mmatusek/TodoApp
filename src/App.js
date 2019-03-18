@@ -19,7 +19,7 @@ class App extends Component {
             <aside>
               {<Navigation />}
             </aside>
-            <section>
+            <section >
               {<Page />}
             </section>
           </main>

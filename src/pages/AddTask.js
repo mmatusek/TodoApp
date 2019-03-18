@@ -5,7 +5,7 @@ class AddTask extends React.Component {
 
 
     minDate = new Date().toISOString().slice(0, 10);
-    counter = 3;
+
     state = {
         checked: false,
         text: '',
