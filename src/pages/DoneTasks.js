@@ -1,30 +1,26 @@
 import React from 'react';
-import '../styles/DoneTask.css';
-import Task from './Task.js'
+import "../styles/ListDone.css";
+
 
 const DoneTasks = (props) => {
 
-    const notactive = props.tasks.filter(task => !task.za)
+    const notactive = props.tasks.filter(task => !task.active)
 
-    const notactiveTask = notactive.map(task => ( <
-        Task key = {
-            props.id
-        }
-        delete = {
-            props.delete
-        }
-        task = {
-            task
-        }
-        />
-    ))
+    if (notactive.length >= 2) {
+        notactive.sort((a, b) => b.finishDate - a.finishDate)
+    }
+    
+    const notactiveTask = notactive.map(task =>
+        ( <ul className="listD">
+        <li><p><strong>{task.title}</strong></p>
+        <h6>Done on: {task.finishDate}</h6>
+        </li>
+        <li><button className="delete" onClick={()=> props.delete(task.id)}>Delete</button></li>
+        </ul>)
+    );
+    
     return (
-
-        <
-        div > {
-            notactiveTask
-        } <
-        /div>
+        <div className="doneTasks"> { notactiveTask} </div>
     )
 
 }
