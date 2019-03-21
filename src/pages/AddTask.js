@@ -60,7 +60,7 @@ class AddTask extends React.Component {
                 <input type="text" onChange={this.handleTextChange} value={this.state.text}></input>
                 <input type="checkbox" id="priorytet" onClick={this.handleClick} checked={this.state.checked}></input>
                 <label htmlFor="priorytet">priority</label>
-                <br />
+                
                 <h3>Deadline</h3>
                 <input type="date" onChange={this.handleDateChange} value={this.state.date} min={this.state.date} max={maxDate} />
                 <button onClick={this.handleAddClick} >Add task</button>
